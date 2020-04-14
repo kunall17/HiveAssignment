@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant name"
+        android:textColor="@android:color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cuizines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:text="Pizza, burger"
+        android:textSize="10sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/averageCostForTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cuizines"
+        android:text="Cost for two: 200 | 8 AM to 10:30 PM"
+        android:textSize="8sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/name"
+        android:layout_alignParentEnd="true"
+        android:text="4/5"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/menuUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="View Menu"
+        android:layout_alignBaseline="@id/averageCostForTwo"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
